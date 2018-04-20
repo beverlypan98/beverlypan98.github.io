@@ -1,0 +1,126 @@
+@import "compass/css3";
+head{
+}
+body{
+    /* font-family: 'Megrim', cursive; */
+    font-family: 'Play', sans-serif;
+    color:#F9C16D;
+    text-shadow: -2px 4px 6px rgba(0,0,0,0.6);
+    background: linear-gradient(60deg, #2d1514 0%,#600000 100%);
+}
+a{
+  font-family: 'Play', sans-serif;
+  color:#F9C16D;
+  font-style:normal;
+  text-decoration:none;
+}
+
+@keyframes enterselect{
+  from{
+    top:80px;
+    opacity:.5;
+  }
+  to{
+    top:120px;
+    opacity:1;
+  }
+}
+@keyframes entername{
+
+}
+#heading{
+  font-family: 'Megrim', cursive;
+  font-size:40px;
+  position:absolute;
+  top:120px;
+  left:180px;
+  text-align:right;
+  animation: enterselect 1s ease-out 0s;
+}
+#champselect{
+  font-size:32px;
+}
+#name{
+  opacity:0;
+}
+
+#circle{
+  position:absolute;
+  left:30%;
+  top:139px;
+  border-radius:50%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+.circleimg{
+  position:absolute;
+}
+.bigring{
+  position:absolute;
+
+}
+
+
+#links{
+  position:absolute;
+  font-size:22px;
+  margin:0;
+}
+.description{
+  font-size:14px;
+  font-style:italic;
+}
+.lore{
+  text-align:right;
+  position:absolute;
+  white-space:nowrap;
+  left:260px;
+  top:360px;
+}
+.skills{
+  position:absolute;
+  white-space:nowrap;
+  left:960px;
+  top:180px;
+}
+.inventory{
+  position:absolute;
+  white-space:nowrap;
+  left:1000px;
+  top:300;
+}
+.stats{
+  position:absolute;
+  white-space:nowrap;
+  left:1000px;
+  top:420px;
+}
+.lockIn{
+  position:absolute;
+  white-space:nowrap;
+  left:960px;
+  top:540px;
+}
+@keyframes linkhover {
+  0%{color:#F9C16D;}
+  100%{color:#fcdcba;
+  font-size:28px;}
+}
+#links .lore:hover,#links .skills:hover,#links .inventory:hover,#links .stats:hover,#links .lockIn:hover{
+  cursor:pointer;
+  animation:linkhover .25s ease-out 0s;
+  animation-fill-mode:forwards;
+}
+
+#lefttab{
+  position:absolute;
+  left:0;
+  top:0;
+}
+#righttab{
+  position:absolute;
+  right:0;
+  top:0;
+}
