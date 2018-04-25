@@ -3,13 +3,13 @@
     <title>Beverly Pan</title>
     <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
-    <!-- <link rel="stylesheet" href="assets/animate.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <link rel="preload" href="assets/images/tc1_circle_compress.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="assets/images/bigring_compress.png" as="image">
     <link rel="preload" href="assets/images/leftbanner_compress.png" as="image">
     <link rel="preload" href="assets/images/rightbanner.png" as="image">
+    <link rel="stylesheet" href="assets/css/animsition.min.css">
 </head>
 
 <body>
@@ -17,31 +17,34 @@
         <div id = "champselect">CHAMPION SELECT:</div>
         <div id = "name">Beverly Pan</div>
     </div>
-    <div id = "circle">
-        <!-- <div class = "bevel"></div> -->
-        <img class = "circleimg" src="assets/images/tc1_circle_compress.png">
-        <img class = "bigring" src="assets/images/bigring_compress.png">
-        <!-- <div class = "insidebevel"></div> -->
+    <!-- <div id = "circle"> -->
 
-    </div>
+        <div class = "bevel"></div>
+        <!-- <img class = "bigring" src="assets/images/bigring_compress.png"> -->
+        <div class = "cssouterring center"></div>
+        <div class = "cssinnerring center"><img class = "circleimg" src="assets/images/tc1_circle_compress.png"></div>
+
+    <!-- </div> -->
     <div id = "links">
-        <a class = "lore" href = "lore.html">Lore
+        <a class = "lore active" href = "lore.html">Lore
             <div class = "description">the about page</div>
-          </a>
-        <div class = "ring"></div>
-        <a class = "skills" href="skills.html">Skills
+            <div class = "ringicon"></div>
+        </a>
+        <div class = "ringicon"></div>
+        <div class = "ringicon"></div>
+        <a class = "skills inactive" href="skills.html">Skills
             <div class = "description">and abilities</div>
         </a>
-        <div class = "ring"></div>
-        <a class = "inventory" href="inventory.html">Inventory
+        <div class = "ringicon"></div>
+        <a class = "inventory inactive" href="inventory.html">Inventory
             <div class = "description">the portfolio</div>
         </a>
-        <div class = "ring"></div>
+        <div class = "ringicon inactive"></div>
         <a class = "stats" href="stats.html">Stats
             <div class = "description">some quantifying</div>
         </a>
-        <div class = "ring"></div>
-        <a class = "lockIn" href="lockin.html">Lock In
+        <div class = "ringicon"></div>
+        <a class = "lockIn inactive" href="lockin.html">Lock In
             <div class = "description">contact me!</div>
         </a>
     </div>
@@ -53,5 +56,7 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="assets/script/animsition.min.js"></script>
 <script src="assets/script/script.js"></script>
 </html>
