@@ -1,0 +1,57 @@
+body{
+    font-family: 'Megrim', cursive;
+    /* font-family:'Raleway',sans-serif; */
+    /* font-family: 'Play', sans-serif; */
+    color:#F9C16D;
+    text-shadow: -2px 4px 6px rgba(0,0,0,0.6);
+    background: linear-gradient(60deg, #2d1514 0%,#600000 100%);
+    height:100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+}
+a{
+  font-family: 'Play', sans-serif;
+  color:#F9C16D;
+  font-style:normal;
+  text-decoration:none;
+}
+#comingsoon{
+  position:absolute;
+  font-size:50px;
+  top:50%;
+  transform:translateY(-50%);
+}
+.tab a{
+  position:absolute;
+  height:100vh;
+  width:13vw;
+  left:0;
+}
+.tabimg{
+  position:absolute;
+  height:100vh;
+  width:10vw;
+  left:3vw;
+}
+.taboverlay{
+  position:absolute;
+  height:100vh;
+  width:13vw;
+  background-color:rgba(0,0,0,0.6);
+  opacity:.65;
+  z-index:100;
+}
+.tab:hover .taboverlay{
+  /* opacity:0; */
+  animation: expandbox .5s ease-out 0s;
+  animation-fill-mode:forwards;
+}
+@keyframes expandbox{
+  from{width:100%;}
+  to{width:0%;}
+}

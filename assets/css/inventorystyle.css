@@ -1,0 +1,100 @@
+body{
+    /* font-family: 'Megrim', cursive; */
+    font-family:'Raleway',sans-serif;
+    /* font-family: 'Play', sans-serif; */
+    color:#F9C16D;
+    text-shadow: -2px 4px 6px rgba(0,0,0,0.6);
+    background: linear-gradient(60deg, #2d1514 0%,#600000 100%);
+    height:100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+}
+a{
+  font-family:'Raleway', cursive;
+  font-size:14;
+  position:absolute;
+}
+
+#heading{
+  position:absolute;
+  font-family:'Megrim', cursive;
+  font-size:40px;
+  top:125px;
+  right:15vw;
+  text-align:right;
+}
+.description{
+  /* position:relative; */
+  font-size:32px;
+}
+
+/* #grid{
+  position:absolute;
+  grid-template-columns: 33% 33% 33%;
+  height:50vh;
+  width:50vw;
+  top:30vh;
+  display:grid;
+}
+#grid img{
+  position:absolute;
+}
+.img1{
+  width:400px;
+}
+.img2{
+  width:200px;
+}
+.img3{
+  width:200px;
+} */
+#nowrap {
+  position:absolute;
+	justify-content:flex-start;
+	display:flex;
+	overflow-x:auto;
+  overflow-y:auto;
+  height:60vh;
+  width:70vw;
+  top:30vh;
+}
+#no-wrap-container > img{
+  position:absolute;
+  /* height:auto; */
+	flex:auto;
+}
+
+.tab a{
+  position:absolute;
+  height:100vh;
+  width:13vw;
+  left:0;
+}
+.tabimg{
+  position:absolute;
+  height:100vh;
+  width:10vw;
+  left:3vw;
+}
+.taboverlay{
+  position:absolute;
+  height:100vh;
+  width:13vw;
+  background-color:rgba(0,0,0,0.6);
+  opacity:.65;
+  z-index:100;
+}
+.tab:hover .taboverlay{
+  /* opacity:0; */
+  animation: expandbox .5s ease-out 0s;
+  animation-fill-mode:forwards;
+}
+@keyframes expandbox{
+  from{width:100%;}
+  to{width:0%;}
+}
